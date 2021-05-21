@@ -118,6 +118,55 @@ li {
   color: #fff;
 }
 
+.page {
+  position: relative;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 91px;
+  height: 780px;
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar__link {
+  display: inline-block;
+  font-family: 'Futura Demi', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+  color: #E3B873;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: relative;
+  padding-right: 50px;
+}
+
+.sidebar__link::after {
+  content: '';
+  position: absolute;
+  height: 51px;
+  width: 1.5px;
+  right: 0;
+  top: -80%;
+  background-color: #E3B873;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 @media (max-width: 1130px) {
   html {
     font-size: 9px;

@@ -30,9 +30,6 @@
     color: $primary
     border-bottom: 1px solid $primary
     
-    
-   
-  
 
 .menu
 
@@ -47,6 +44,46 @@
     font-family: 'Futura Demi', sans-serif 
     text-transform: uppercase
     color: $white
+
+.page
+  position: relative
+
+.sidebar
+  position: fixed
+  top: 0
+  left: 0
+  width: 91px
+  height: 780px
+  background-color: $black
+  
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+  &__link
+    display: inline-block
+    font-family: 'Futura Demi', sans-serif 
+    font-size: 1.6rem
+    line-height: 1.9rem
+    font-weight: 400
+    color: $primary
+    transform:  rotate(90deg)
+    position: relative
+    padding-right: 50px
+
+    &::after
+      content: ''
+      position: absolute
+      height: 51px
+      width: 1.5px
+      right: 0
+      top: -80%
+      background-color: $primary
+      transform:  rotate(90deg)
+
+    
+
 
 @media ( max-width: 1130px )
   html  
