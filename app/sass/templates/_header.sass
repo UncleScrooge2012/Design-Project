@@ -15,7 +15,8 @@
     align-items: center
     
 
-  &__column
+  &__btn
+    min-width: 16.1rem
     
 
   &__logo
@@ -163,6 +164,10 @@
       &.active span
         transform: scale(0) translate(0px, -50%)
 
+    &__link
+      font-size: 2.3rem
+      line-height: 3rem
+
     &__body
       position: fixed
       top: 0
@@ -170,7 +175,7 @@
       width: 100%
       height: 100%
       background-color: rgba(0,0,0, 0.8);   
-      padding: 10rem 3rem 3rem 3rem
+      padding: 9rem 3rem 3rem 3rem
       transition: left 0.3s ease 0s
       overflow: auto
       &::before
@@ -194,4 +199,14 @@
         margin-left: 0
         margin-top: 1.5rem
         font-size: 2rem
-        
+
+@media  ( max-width: 490px)
+  .header__btn
+    display: none
+  .menu__btn
+    margin-top: 2rem
+  .menu__body
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
