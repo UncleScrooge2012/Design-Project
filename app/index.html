@@ -176,7 +176,13 @@
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen>
                 </iframe> -->
-                <img src="images/video/video__img.jpg" alt="Man works">
+                <picture>
+                  <source srcset="images/video/video__img.jpg" type="image/jpeg" media="(min-width:940px)">
+                  <source srcset="images/video/video__img-l.jpg" type="image/jpeg" media="(min-width:500px)">
+                  <source srcset="images/video/video__img-m.jpg" type="image/jpeg" media="(max-width:500px)">
+                  <img src="images/video/video__img.jpg" alt="Man works">
+                </picture>
+                
                 <button class="video__btn">
                   <svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 13L7.65417e-07 25.1244L1.82536e-06 0.875644L21 13Z" fill="white" />

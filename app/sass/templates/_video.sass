@@ -1,5 +1,5 @@
 .video
-  
+  padding-bottom: 15rem  
   
   &__container
     display: flex
@@ -23,6 +23,7 @@
   &__subtitel
     position: relative
     padding: 0 40px 0 45px 
+    margin-bottom: 2rem
 
     &::before,
     &::after
@@ -42,6 +43,8 @@
   &__box
     position: relative
     margin-bottom: 6.2rem
+    max-width: 100%
+    
     
     &::before
       content: ''
@@ -54,8 +57,8 @@
   
   &__btn
     position: absolute
-    top: 50%
-    left: 50%
+    top: 41%
+    left: 46%
     width: 85px
     height: 85px
     background-color: $primary
@@ -100,6 +103,7 @@
     min-width: 23.1rem
     border: none
     border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+    background-color: transparent
     &:placeholder
       font-size: 1.8rem
       line-height: 2.4rem
@@ -147,3 +151,32 @@
       
 
 
+@media  ( max-width: 768px  )
+  .video
+    background-color: $black
+    color: $white
+    &__btn
+      width: 60px
+      height: 60px
+
+  .form-video
+    &__top
+      flex-direction: column
+      align-items: flex-start
+
+      label + label
+        margin: 2rem  0
+
+    &__input
+      border-bottom: 1px solid $white
+      color: $white
+
+      &:placeholder
+        color: $white
+    &__name,
+    &__number
+      color: $white
+      
+
+    &__btn
+      min-width: 23.1rem

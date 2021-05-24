@@ -70,7 +70,7 @@ li {
   font-weight: 500;
   font-style: italic;
   text-transform: uppercase;
-  padding: 1.1rem 0 1.1rem;
+  padding: 1.1rem 2rem 1.1rem;
   border: 1px solid #E3B873;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -475,7 +475,7 @@ li {
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 840px) {
   .sidebar {
     display: none;
   }
@@ -656,6 +656,10 @@ li {
   }
 }
 
+.video {
+  padding-bottom: 15rem;
+}
+
 .video__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,6 +698,7 @@ li {
 .video__subtitel {
   position: relative;
   padding: 0 40px 0 45px;
+  margin-bottom: 2rem;
 }
 
 .video__subtitel::before, .video__subtitel::after {
@@ -716,6 +721,7 @@ li {
 .video__box {
   position: relative;
   margin-bottom: 6.2rem;
+  max-width: 100%;
 }
 
 .video__box::before {
@@ -730,8 +736,8 @@ li {
 
 .video__btn {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 41%;
+  left: 46%;
   width: 85px;
   height: 85px;
   background-color: #E3B873;
@@ -791,6 +797,7 @@ li {
   min-width: 23.1rem;
   border: none;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  background-color: transparent;
 }
 
 .form-video__input:placeholder {
@@ -846,4 +853,40 @@ li {
 
 .form-video__input-checkbox:checked + .form-video__checkbox:after {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .video {
+    background-color: #131313;
+    color: #fff;
+  }
+  .video__btn {
+    width: 60px;
+    height: 60px;
+  }
+  .form-video__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .form-video__top label + label {
+    margin: 2rem  0;
+  }
+  .form-video__input {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+  }
+  .form-video__input:placeholder {
+    color: #fff;
+  }
+  .form-video__name, .form-video__number {
+    color: #fff;
+  }
+  .form-video__btn {
+    min-width: 23.1rem;
+  }
 }
