@@ -38,8 +38,32 @@
 
 
 
+.titel
+  margin-bottom: 1rem
+  font-family: 'Yeseva One', cursive
+  font-size: 2rem
+  line-height: 2.8rem
+  text-transform: uppercase
+  color: $white
 
-
+.subtitel
+  span
+    display: inline-block
+    position: relative
+    padding: 0 40px 0 45px 
+    margin-bottom: 2rem
+    &::before,
+    &::after
+      content: ''
+      position: absolute
+      height: 1.5px
+      width: 32px
+      background-color: $primary
+      top: 50%
+    &::after
+      right: 0
+    &::before
+      left: 0
 
 
 
