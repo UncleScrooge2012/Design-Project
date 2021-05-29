@@ -67,7 +67,33 @@
 
 
 
+.checkbox
+  position: relative
+  display: inline-block
+  padding-left: 2.3rem
+  &::before,
+  &::after      
+    content: ''
+    position: absolute      
+  &::before 
+    left: 0      
+    top: -2px
+    width: 18px
+    height: 18px
+    background-color: $primary
+  &::after
+    left: 4px
+    top: 4px
+    width: 10px
+    height: 8px
+    background: url('images/video/check.svg') no-repeat center/cover
+    opacity: 0
+    transition: all 0.4s
 
+.input-checkbox
+  display: none
+  &:checked + .checkbox:after
+    opacity: 1
 
 
 

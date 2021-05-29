@@ -11,18 +11,13 @@
     flex-direction: column
     justify-content: center
     align-items: center
-
- 
-    
-
-
    
 
   &__box
     position: relative
     margin-bottom: 6.2rem
     max-width: 100%
-    
+   
     
     &::before
       content: ''
@@ -79,10 +74,11 @@
 
   &__input    
     min-width: 23.1rem
+    padding: 1rem 0
     border: none
     border-bottom: 1px solid rgba(54, 54, 54, 0.3)
     background-color: transparent
-    &:placeholder
+    &::placeholder
       font-size: 1.8rem
       line-height: 2.4rem
 
@@ -96,35 +92,7 @@
     min-width: 20rem
     padding: 1.8rem 0 1.6rem
    
-  &__checkbox
-    position: relative
-    display: inline-block
-    padding-left: 2.3rem
-    &::before,
-    &::after      
-      content: ''
-      position: absolute      
-    &::before 
-      left: 0      
-      top: -2px
-      width: 18px
-      height: 18px
-      background-color: $primary
-    &::after
-      left: 4px
-      top: 4px
-      width: 10px
-      height: 8px
-      background: url('images/video/check.svg') no-repeat center/cover
-      opacity: 0
-      transition: all 0.4s
-
-
-  &__input-checkbox
-    display: none
-
-    &:checked + .form-video__checkbox:after
-      opacity: 1
+  
       
       
 
