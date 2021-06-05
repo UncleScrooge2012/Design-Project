@@ -1,0 +1,45 @@
+.projects
+  padding: 15rem 0
+  &__titel    
+    font-size: 2rem
+    font-family: 'Yeseva One', cursive
+    line-height: 2.8rem
+    text-align: center
+    color: $black
+
+  &__text
+    margin: 0 auto 4rem
+    max-width: 60rem
+    font-size: 1.6rem
+    line-height: 2.5rem
+    text-align: center
+
+  &__container
+    display: flex
+    flex-wrap: wrap
+
+  &__column
+    flex: 0 0 33.33%
+
+
+@media  ( max-width: 1078px )
+  .projects
+    &__container
+      justify-content: center
+      
+    &__column
+      &:nth-child(1)
+        margin-right: auto
+      &:nth-child(3)
+        margin-top: 17rem
+        
+        
+@media  ( max-width: 768px )
+  .projects
+    &__container
+      flex-direction: column
+      align-content: center
+
+    &__column
+      &:nth-child(3)
+        margin-top: 20rem
