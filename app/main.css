@@ -1398,3 +1398,203 @@ li {
     margin-top: 20rem;
   }
 }
+
+.steps {
+  padding: 20rem 0 50rem;
+  color: #fff;
+  background-color: #131313;
+}
+
+.steps__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steps__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 61%;
+          flex: 0 1 61%;
+}
+
+.steps__titel {
+  max-width: 20rem;
+  font-size: 2.7rem;
+  line-height: 3.7rem;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.steps__suptitel {
+  margin-bottom: 1.8rem;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.slider-steps__counter {
+  margin-bottom: 1.6rem;
+}
+
+.slider-steps__titel {
+  margin-bottom: 1.6rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.slider-steps__titel span {
+  display: block;
+}
+
+.slider-steps__text {
+  margin-bottom: 6rem;
+  max-width: 33.7rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.slider-steps__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider-steps__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+}
+
+.slider-steps__item:nth-child(1) {
+  margin-bottom: 3.5rem;
+}
+
+.slider-steps__item:nth-child(4) {
+  margin-bottom: 6rem;
+}
+
+.slider-steps__item:nth-child(2), .slider-steps__item:nth-child(3), .slider-steps__item:nth-child(5), .slider-steps__item:nth-child(6) {
+  padding-left: 11.1rem;
+}
+
+.slider-steps__item span {
+  display: block;
+}
+
+.teams {
+  margin-top: -40rem;
+}
+
+.teams__titel {
+  text-align: center;
+}
+
+.teams__text {
+  margin: 0 auto 5rem;
+  max-width: 44.8rem;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  color: #fff;
+}
+
+.teams__container {
+  margin-bottom: 11rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.teams__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+}
+
+.teams__info {
+  position: relative;
+  padding-top: 2rem;
+  margin: 0 auto;
+  max-width: 57rem;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  text-align: center;
+}
+
+.teams__info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 45%;
+  width: 55px;
+  height: 2px;
+  background-color: #E3B873;
+}
+
+.card-teams {
+  position: relative;
+}
+
+.card-teams__label {
+  position: absolute;
+  top: -8%;
+  left: -8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: #E3B873;
+}
+
+.badge {
+  position: absolute;
+  left: 5%;
+  bottom: -15%;
+  min-width: 23.3rem;
+  background-color: #fff;
+}
+
+.badge__name {
+  font-family: Yeseva One, cursive;
+  font-size: 1.8rem;
+  line-height: 2.5;
+  text-align: center;
+}
+
+.badge__profession {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  text-align: center;
+  color: gray;
+}
+
+.badge__experience {
+  padding: 1.3rem 0 1rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+}
